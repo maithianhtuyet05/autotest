@@ -1,0 +1,57 @@
+1. Trường "User Name"
+//span[(text()='User Name')]
+2. Trường "Password"
+//span[(text()='Password')]
+3. Checkbox "Remember username"
+//input[@type='checkbox']
+4. Link "I forgot my password"
+//a[contains(text(), 'I forgot my password')]
+5. Nút "Log in"
+//input[@id='loginButton_0']
+6. Nút đăng nhập với Google
+//a[contains(@title,'Google')]
+7. Nút đăng nhập với GitHub
+//a[contains(@title,'GitHub')]
+8.Nút đăng nhập bằng SSO
+//a[contains(@title,'SSO')]
+9.Link "Try for free"
+//a[contains(text(), 'Try for free')]
+----------------------------
+1.Logo
+//img[contains(@src,'logo-black')]
+2.menu
+    + //span[text()='Products']
+    + //span[text()='Solutions']
+    + //span[text()='Pricing']/parent::a
+    + //span[text()='Developers']
+3.Home
+//a[@href='/']//span[text()='Home']
+4.Sign in
+//button[text()='Sign in']
+5.Request a demo
+//button[text()='Request a demo']
+6.Try it free
+//button[text()='Try it free']
+7.Search
+//button[.//img[@alt='search']]
+8.play video
+//button[contains(@class,'MuiIconButton-colorDark')]
+9.form nhập thông tin:
+    +  email: //input[@id='Email']
+    +  Msg Email: //div[@id='ValidMsgEmail']
+    +  Company: //input[@id='Company']
+    + Interest: //select[@id='Solution_Interest__c']
+    + Comments: //textarea[@id='Sales_Contact_Comments__c']
+    + Button Let's Talk: //button[@class='mktoButton']
+10.Footer
+  + Logo : //img[contains(@src,'footer-logo')]
+  + Terms of service: //span[text()='Terms of Service']
+  + Policy: //span[text()='Privacy Policy']
+  + EEA: //span[text()='EEA']
+  + Cookies Setting: //a[text()='Cookies Settings']
+11.Privacy Preference Center
+  + title: h2[@id='ot-pc-title']
+  + //div[@role='alertdialog']
+  + h3 Your privacy: //h3[contains(text(), 'Privacy')]
+  + More information: //a[text()='More information']
+  + Btn confirm my choice: //button[text()='Confirm My Choices']
