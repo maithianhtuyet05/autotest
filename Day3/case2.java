@@ -17,7 +17,7 @@ public class case2 {
     private static By dropdownError = By.cssSelector("select.mktoField.mktoInvalid");
 
     public static void main(String[] args) {
-        WebDriverManager.chromedriver().setup(); // em cx không import được 
+        WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("https://saucelabs.com/request-demo");
