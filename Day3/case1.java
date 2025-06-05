@@ -15,7 +15,7 @@ public class case1 {
         private static By commentInput = By.cssSelector("#Sales_Contact_Comments__c");
         private static By tryBtn = By.linkText("Try it free");
         public static void main(String[] args) {
-            WebDriverManager.chromedriver().setup(); // đoạn này e kb tại sao nó lại ko tự import
+            WebDriverManager.chromedriver().setup();
             driver = new ChromeDriver();
             driver.manage().window().maximize();
             driver.get("https://saucelabs.com/request-demo");
